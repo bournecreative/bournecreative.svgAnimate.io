@@ -1,19 +1,23 @@
-# Reveal on scroll
+# SVG Holiday Animation
 
-As user scrolls webpage, hero section is pinned and the hero image for each of the following sections is revealed as user continues to scroll.
+SVG animation designed to add a little holiday cheer for homepage.
 
-![Reveal on scroll gif](resources/revealOnScroll.gif)
-
+![Reveal on scroll gif](resources/holiday.gif)
 
 ## Details
-This effect is acheived using scroll magic and CSS clipping. This is an example of effects I prototype.
 
-* Imagery for each hero section is revealed based on scroll position.
-* Once subsequent section's image is revealed, related text fades in.
+The implementation consists of the following. On page load:
 
+- Calculating the height of the content section (This could change depending on the number of sections/promotions added to the page).
+
+- Also calculate the width of the screen to determine the number of decorative SVGs that would be needed to fill each row.
+
+- Dynamically generating the correct number of rows to cover the content. Each row consists of a number of decorative svgs. The rows are offset in position to look more akin to a pattern.
+
+- Each row is tied to a scroll magic scene, that manages the animation to clear the decorations from the screen and vice versa when user is scrolling back up page.
 
 ### Demo
 
-[Reveal on scroll demo](https://bournecreative.github.io/bournecreative.revealOnScroll.io/)
+[Live demo](https://bournecreative.github.io/bournecreative.svgHoliday.io/)
 
-Built with vanilla javascript, scss, scroll magic using ES6 modules, and using laravel mix for the project build.
+Built with vanilla javascript, scss, scroll magic, green sock, using ES6 modules, and using laravel mix for the project build.
