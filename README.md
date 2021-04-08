@@ -18,6 +18,7 @@ The implementation consists of the following. On page load:
 
 ### Demo
 
-[Live demo](https://bournecreative.github.io/bournecreative.svgHoliday.io/)
+
+[Live demo](https://bournecreative.github.io/bournecreative.svgAnimate.io/)
 
 Built with vanilla javascript, scss, scroll magic, green sock, using ES6 modules, and using laravel mix for the project build.
