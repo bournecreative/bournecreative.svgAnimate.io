@@ -22,7 +22,9 @@
     flex-direction: row;
     padding: 20px 20px;
   }
-
+  &:nth-of-type(even) {
+    background: #f6f6f6 !important;
+  }
   &.background-black {
     background: #000;
   }
@@ -160,40 +162,5 @@
   }
   &.text-white {
     color: #fff;
-  }
-}
-
-.background-black {
-  background: #000;
-}
-
-.background-grey {
-  background: #f6f6f6;
-}
-
-.bg-img {
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: 50% 50% !important;
-}
-
-.bg-military {
-  background: url("https://ss7.vzw.com/is/image/VerizonWireless/vzw-military-hero-04192019-m?&scl=1");
-  @media screen and (min-width: 768px) {
-    background: url("https://ss7.vzw.com/is/image/VerizonWireless/vzw-military-hero-04192019-d?&scl=1");
-  }
-}
-
-.bg-family {
-  background: url("https://ss7.vzw.com/is/image/VerizonWireless/vzw-hp-unlimited-mixandmatch-m-0808?&scl=1");
-  @media screen and (min-width: 768px) {
-    background: url("https://ss7.vzw.com/is/image/VerizonWireless/vzw-hp-unlimited-mixandmatch-d-0808?&scl=1");
-  }
-}
-
-.bg-ride {
-  background: url("https://ss7.vzw.com/is/image/VerizonWireless/vzw-hp-best-phones-hero-m-1016?&scl=1");
-  @media screen and (min-width: 768px) {
-    background: url("https://ss7.vzw.com/is/image/VerizonWireless/vzw-hp-best-phones-hero-d-1016?&scl=1");
   }
 }
